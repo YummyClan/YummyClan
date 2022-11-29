@@ -22,4 +22,4 @@ function handleMove() {
   //TO-DO
 }
 
-document.addEventListener("DOMcontentLoaded", startup);
+document.addEventListener("DOMcontentLoaded", start);
