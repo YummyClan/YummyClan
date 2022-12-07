@@ -4,6 +4,7 @@ function start() {
   canvas.addEventListener("touchend", handleEnd);
   canvas.addEventListener("touchcancel", handleCancel);
   canvas.addEventListener("touchmove", handleMove);
+  alert("loaded");
   console.log("hi");
 }
 function handleStart() {
