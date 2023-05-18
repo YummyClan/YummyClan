@@ -5,6 +5,19 @@
 </head>
 	<script type="text/javascript" src="main.js"></script>
 <body style="min-height:90vh">
+	<canvas id="myCanvas" style="border:1px solid #d3d3d3;position:absolute" min-width="99vw" min-height="99vh">
+
+    	</canvas>
+    <script>
+        window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        canvas.width = document.body.clientWidth;
+        canvas.height = document.body.clientHeight;
+        const img = new Image(100, 200);
+        img.src = "picture.jpg";
+       ctx.drawImage(img, 10, 10);
+    </script>
 	<img src=./assets/image1.jpg style="max-height:17vh;padding-bottom:60vh">
 	<img src=./assets/image2.jpg style="max-height:17vh" align="right">
 	<div style="vertical-align:bottom"><img src=./assets/image3.jpg style="max-height:17vh;margin-bottom: -17vh"></div>
